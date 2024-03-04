@@ -80,14 +80,20 @@
   <kbd><img src="https://i.imgur.com/Mdney5Y.png" alt="Level 7"></kbd>
 </p>
 
+<p>This level introduces the Shoot Tubes that teleport the player up, down, or forward. In this level it is used as a fun and fast way to travel through the level and collect all the rings. The pplayer only has to be careful not to fall off the platforms.</p>
+
 <h3>Level 8</h3>
 
 <p align="center">
   <kbd><img src="https://i.imgur.com/btdY67V.png" alt="Level 8"></kbd>
 </p>
 
+<p>This level is similar to a Simon Color game. A big cube shows a color sequence. The player must click the buttons to match that color sequence. After three turns taht get increasingly difficult, the player completes the level.</p>
+
 <h3>Level 9</h3>
 
 <p align="center">
   <kbd><img src="https://i.imgur.com/kyygtZ3.png" alt="Level 9"></kbd>
 </p>
+
+<p>This level is a maze. The player must go inside the maze and collect the rings hidden inside the rooms. They must track their progress and fidn their way to all the rings to complete the level.</p>
