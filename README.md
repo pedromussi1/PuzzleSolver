@@ -9,10 +9,6 @@
 
 ### [Play the Game Here!](https://play.unity.com/mg/other/firstperson-3)
 
-<iframe id='webgl_iframe' frameborder="0" allow="autoplay; fullscreen; vr" allowfullscreen="" allowvr=""
-    mozallowfullscreen="true" src="https://play.unity.com/webgl/fafd99de-2364-4989-8869-198a2b15ffbe?screenshot=false&embedType=embed"  width="810"
-    height="640" onmousewheel="" webkitallowfullscreen="true"></iframe>
-
 <h2>Description</h2>
 
 <p>This is a three-dimensional puzzle game based on increased levels of mechanics and difficulty as the player progresses, acquiring new skills and following tips will help the player move to the next level.</p>
