@@ -22,7 +22,7 @@ This is a three-dimensional puzzle game based on increased levels of mechanics a
 
 <h2>Environments Used </h2>
 
-- <b>Windows 10</b>
+- <b>Windows 11</b>
 
 <h2>Game Walk-through:</h2>
 
