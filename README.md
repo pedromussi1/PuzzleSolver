@@ -6,9 +6,6 @@
 [![Video](https://img.youtube.com/vi/wtw1QMQUFRQ/0.jpg)](https://www.youtube.com/watch?v=wtw1QMQUFRQ)
 
 
-
-
-
 <h2>Description</h2>
 This is a three-dimensional puzzle game based on increased levels of mechanics and difficulty as the player progresses, acquiring new skills and following tips will help the player move to the next level.
 <br />
