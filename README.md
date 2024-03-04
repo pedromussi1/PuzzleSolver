@@ -29,7 +29,7 @@ This is a three-dimensional puzzle game based on increased levels of mechanics a
 <p align="center">
 Level 1: <br/>
 <img src="https://i.imgur.com/KRMatUC.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<p2>In this level we introduce the first, most basic mechanics of the game, which are how to walk and jump. In order to move to the next level, the player must mup from platforms and get to the gold coin.</p2>
+<p>In this level we introduce the first, most basic mechanics of the game, which are how to walk and jump. In order to move to the next level, the player must mup from platforms and get to the gold coin.</p>
 <br />
 <br />
 <p align="center">
