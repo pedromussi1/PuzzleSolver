@@ -2,12 +2,6 @@
 
  ### [YouTube Demonstration](https://www.youtube.com/watch?v=wtw1QMQUFRQ)
 
-<a href="http://www.youtube.com/watch?feature=player_embedded&v=Ywtw1QMQUFRQ&t=4s
-" target="_blank"><img src="http://img.youtube.com/vi/wtw1QMQUFRQ&t=4s/0.jpg" 
-alt="wtw1QMQUFRQ&t=4s" width="240" height="180" border="10" /></a>
-
-[!wtw1QMQUFRQ&t=4s(http://img.youtube.com/vi/wtw1QMQUFRQ&t=4sE/0.jpg)](http://www.youtube.com/watch?v=wtw1QMQUFRQ&t=4s)
-
 [![Video](https://img.youtube.com/vi/wtw1QMQUFRQ/0.jpg)](https://www.youtube.com/watch?v=wtw1QMQUFRQ)
 
 
