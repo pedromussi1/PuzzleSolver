@@ -53,6 +53,24 @@
 
 <p>In this level, we introduce the concept of crouching, with the idea that by using the crouching mechanism, the player can go past obstacles they would not be able to if they were standing up. By using that mechanic correctly, the player gets to move to the next level.</p>
 
+#region Handles Crouching
+if (Input.GetKey(KeyCode.LeftControl) && canMove && !isCrouching)
+{
+    // Crouch when Left Control is pressed
+    characterController.height = originalHeight / 2f;
+    characterController.center = originalCenter / 2f;
+    isCrouching = true;
+}
+else if (!Input.GetKey(KeyCode.LeftControl) && isCrouching)
+{
+    // Stand up when Left Control is released
+    characterController.height = originalHeight;
+    characterController.center = originalCenter;
+    isCrouching = false;
+}
+#endregion
+
+
 <h3>Level 4</h3>
 
 <p align="center">
