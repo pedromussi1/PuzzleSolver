@@ -1,3 +1,4 @@
+
 <h1 align="center">PuzzleSolver</h1>
 
 ### [YouTube Demonstration](https://www.youtube.com/watch?v=wtw1QMQUFRQ)
@@ -85,7 +86,7 @@
 <h3>Level 8</h3>
 
 <p align="center">
-  <kbd><img src="https://i.imgur.com/btdY67V.png" alt="Level 8"></kbd>
+  <kbd><img src="https://i.imgur.com/Miq0agH.png" alt="Level 8"></kbd>
 </p>
 
 <p>This level is similar to a Simon Color game. A big cube shows a color sequence. The player must click the buttons to match that color sequence. After three turns taht get increasingly difficult, the player completes the level.</p>
@@ -97,3 +98,5 @@
 </p>
 
 <p>This level is a maze. The player must go inside the maze and collect the rings hidden inside the rooms. They must track their progress and fidn their way to all the rings to complete the level.</p>
+
+
