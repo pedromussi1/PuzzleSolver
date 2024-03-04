@@ -35,39 +35,47 @@ Level 1: <br/>
 <p align="center">
 Level 2:  <br/>
 <img src="https://i.imgur.com/ZCM5RN7.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<p>In this level we introduce the concept of sprinting, with the idea that by using the sprint mechanism, the player can move faster and thus make longer jumps. The player must master must master the sprinting mechanic in order to move oon to the next level. </p>
 <br />
 <br />
 <p align="center">
 Level 3: <br/>
 <img src="https://i.imgur.com/AGIusI8.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<p>In this level we introduce the concept of crouching, with the idea that by using the crouching mechanism, the player can go past obstacles they would not be able to if they were standing up. By using that mechanic correctly, the player gets to move to the next level. </p>
 <br />
 <br />
 <p align="center">
 Level 4:  <br/>
 <img src="https://i.imgur.com/3dfoBgc.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<p>In this level we introduce the trampoline obejct, distinguished with a bright green color. By touching object with this green color, the player will be propelled upwards, thus being able to make higher jumps. </p>
 <br />
 <br />
 <p align="center">
 Level 5:  <br/>
 <img src="https://i.imgur.com/RLMFD1t.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<p> This level is used as a recap of all the abilities and mechanics introduced in the game so far. By using everything the player learned with levels 1-4, they will be able to move on to the next level.</p>
 <br />
 <br />
 <p align="center">
 Level 6:  <br/>
 <img src="https://i.imgur.com/4mwyQXP.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<p>This level is similar to a memory card game. By touching each button on the platform, a color will be revealed. The player must match the pairs of colored blocks and complete the puzzle. By doing so, the next level is unlocked. </p>
 <br />
 <br />
 <p align="center">
 Level 7:  <br/>
 <img src="https://i.imgur.com/Mdney5Y.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<p> </p>
 <br />
 <br />
 <p align="center">
 Level 8:  <br/>
 <img src="https://i.imgur.com/btdY67V.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<p> </p>
 <br />
 <br />
 <p align="center">
 Level 9:  <br/>
 <img src="https://i.imgur.com/kyygtZ3.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<p> </p>
 </p>
