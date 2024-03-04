@@ -22,14 +22,15 @@ This is a three-dimensional puzzle game based on increased levels of mechanics a
 <p align="center">
 Level 1: <br/>
 <img src="https://i.imgur.com/KRMatUC.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<p>In this level we introduce the first, most basic mechanics of the game, which are how to walk and jump. In order to move to the next level, the player must mup from platforms and get to the gold coin.</p>
 <br />
 <br />
-Select the disk:  <br/>
-<img src="https://i.imgur.com/tcTyMUE.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+Level 2:  <br/>
+<img src="https://i.imgur.com/ZCM5RN7.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
 Enter the number of passes: <br/>
-<img src="https://i.imgur.com/nCIbXbg.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/AGIusI8.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
 Confirm your selection:  <br/>
