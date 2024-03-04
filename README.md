@@ -7,7 +7,7 @@
   <a href="https://www.youtube.com/watch?v=wtw1QMQUFRQ"><img src="https://img.youtube.com/vi/wtw1QMQUFRQ/0.jpg" alt="YouTube Demonstration"></a>
 </p>
 
-<h2>Play The Game Here!</h2>
+### [Play the Game Here!](https://play.unity.com/mg/other/firstperson-3)
 
 <iframe id='webgl_iframe' frameborder="0" allow="autoplay; fullscreen; vr" allowfullscreen="" allowvr=""
     mozallowfullscreen="true" src="https://play.unity.com/webgl/fafd99de-2364-4989-8869-198a2b15ffbe?screenshot=false&embedType=embed"  width="810"
