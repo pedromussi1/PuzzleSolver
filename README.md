@@ -36,7 +36,7 @@ Level 2:  <br/>
 <img src="https://i.imgur.com/ZCM5RN7.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-Enter the number of passes: <br/>
+Level 3: <br/>
 <img src="https://i.imgur.com/AGIusI8.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
