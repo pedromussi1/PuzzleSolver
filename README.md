@@ -11,7 +11,7 @@
 
 <h2>Description</h2>
 
-<p>This is a three-dimensional puzzle game based on increased levels of mechanics and difficulty as the player progresses, acquiring new skills and following tips will help the player move to the next level.</p>
+<p>This is a three-dimensional puzzle game based on increased levels of mechanics and difficulty as the player progresses, acquiring new skills and following tips will help the player move to the next level. This game was developed on Unity3D along with Blender for modelling required assets. It includes tips for helping the player move to the next level and introduces innovative mechanics not usually seen on games of this caliber such as trampoline, shoot tube, Simon color game, and memory card game. All assets and ideas portrayed in this game are my own, no outside sources were used.</p>
 
 <h2>Languages and Utilities Used</h2>
 
