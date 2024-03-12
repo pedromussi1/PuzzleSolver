@@ -170,3 +170,4 @@ void PropelPlayerDown(): This function applies a downward force to the player's 
 
 void PropelPlayerForward(): This function handles teleporting the player forward. It calculates the new position (teleportPosition) by adding the player's current position with a vector representing the forward direction (transform.TransformDirection(Vector3.forward)) multiplied by teleportDistance. Then, it temporarily disables the character controller, sets the player's position to the calculated teleportation position, and finally enables the character controller again. This effectively moves the player to a new position in the game world without any intermediate movement.
 
+<h3>Simon Color Game</h3>
