@@ -124,7 +124,7 @@ Vector3 forward = transform.TransformDirection(Vector3.forward); and Vector3 rig
 
 bool isRunning = Input.GetKey(KeyCode.LeftShift);: This line checks if the left shift key is being held down to determine whether the player is running.
 
-float curSpeedX = canMove ? (isRunning ? runSpeed : walkSpeed) * Input.GetAxis("Vertical") : 0; and float curSpeedY = canMove ? (isRunning ? runSpeed : walkSpeed) * Input.GetAxis("Horizontal") : 0;: These lines calculate the current movement speed along the x and y axes based on whether the player can move (canMove), whether they are running (isRunning), and the input received from the vertical and horizontal axes.
+float curSpeedX  and float curSpeedY: These lines calculate the current movement speed along the x and y axes based on whether the player can move (canMove), whether they are running (isRunning), and the input received from the vertical and horizontal axes.
 
 float movementDirectionY = moveDirection.y;: This line stores the current y-component of the movement direction to be used for jumping.
 
