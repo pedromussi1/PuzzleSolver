@@ -163,19 +163,19 @@ private static int colorIndex = 0;: This line declares a private static integer 
 
 originalColor = GetNextColor();: It sets the originalColor variable to the next color from the predetermined colors array using the GetNextColor() method.
 
-<h4>OnMouseDown</h4>
+<h4>OnMouseDown()</h4>
 
 if (!isFlipped && (firstCube == null || secondCube == null)): This condition checks if the cube hasn't been flipped yet and if either the first or second cube is null (indicating that one of them hasn't been selected yet). 
 
 If the conditions are met, it calls FlipCube() to flip the cube, then checks for a match and plays a flip sound.
 
-<h4>Flip Cube</h4>
+<h4>FlipCube()</h4>
 
 GetComponent<Renderer>().material.color = originalColor;: It sets the cube's color to the originalColor obtained from GetNextColor().
 
 isFlipped = true;: It sets the isFlipped flag to true, indicating that the cube has been flipped. It also assigns the current cube to firstCube if firstCube is null, or to secondCube otherwise.
 
-<h4>Revert Cube</h4>
+<h4>RevertCube()</h4>
 
 GetComponent<Renderer>().material.color = Color.white;: It sets the cube's color to white.
 
