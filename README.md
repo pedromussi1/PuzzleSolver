@@ -8,7 +8,7 @@
 </p>
 
 
-### <a href="https://play.unity.com/mg/other/firstperson-3" target="_blank">Play the Game Here!</a>
+<a href="https://play.unity.com/mg/other/firstperson-3" target="_blank">Play the Game Here!</a>
 
 
 <h2>Description</h2>
