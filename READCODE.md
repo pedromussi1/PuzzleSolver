@@ -183,5 +183,17 @@ isFlipped = false;: It sets the isFlipped flag back to false.
 
 <kbd><img src="https://i.imgur.com/EI3L0Y8.png" alt="Level 8"></kbd>
 
+<h3>CheckMatch()</h3>
+
+if (firstCube != null && secondCube != null): This condition checks if both firstCube and secondCube have been assigned, indicating that two cubes have been flipped.
+
+if (firstCube.originalColor == secondCube.originalColor): This condition checks if the original colors of the two cubes match. If they match, it means the player has found a matching pair. It increments the matchedPairs counter. It resets firstCube and secondCube to null, indicating that no cubes are currently selected. It plays a sound to indicate a match. 
+
+It checks if all pairs have been matched (matchedPairs == 10). If so: It plays a completion sound (ChallengeComplete.Play() if the sound is not null). Activates a level completion object (LevelComp) and invokes the LoadNextLevel() function after a delay of 2 seconds. This part could trigger additional actions for transitioning to the next level.
+
+else: If the colors don't match: It invokes the RevertCubesWithDelay() method after a delay of 2 seconds. This method presumably reverts the cubes' colors back to their original state.
+
 <kbd><img src="https://i.imgur.com/93aAfYG.png" alt="Level 8"></kbd>
+
+
 
