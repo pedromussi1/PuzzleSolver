@@ -106,7 +106,27 @@
 
 <h3>Void Start in Character Controller</h3>
 
-<kbd><img src="https://i.imgur.com/pIiI2kF.png" alt="Level 8"></kbd>
+<kbd><img src="https://i.imgur.com/H43B18B.png" alt="Level 8"></kbd>
+
+characterController = GetComponent<CharacterController>();: This line gets the CharacterController and assigns it to the characterController variable, and it is used for controlling player movement and collisions.
+
+Cursor.lockState = CursorLockMode.Locked;: This line locks the cursor to the center of the screen, preventing it from moving around freely.
+
+Cursor.visible = false;: This line makes the cursor invisible while it's locked. now the player will not see the cursor when moving around in the game.
+
+originalHeight = characterController.height; and originalCenter = characterController.center;: These lines save the original height and center position of the character controller. This is useful when the character controller's height or center position is modified during gameplay and needs to be reset later.
+
+audioSourceWalk = gameObject.AddComponent<AudioSource>();: This line adds an AudioSource component and assigns it to the audioSourceWalk variable.
+
+audioSourceWalk.clip = walkSound;: This line sets the audio clip that the audioSourceWalk will play when triggered.
+
+audioSourceWalk.spatialBlend = 1.0f;: This line sets the spatial blend of the audioSourceWalk to 1.0f, indicating that the audio should be played in 3D space. This means that the sound will be perceived as coming from a specific point in the game world, which is typically the position of the GameObject to which the AudioSource is attached.
+
+audioSourceRun = gameObject.AddComponent<AudioSource>();: This line adds another AudioSource component to the same GameObject and assigns it to the audioSourceRun variable. This will be used for playing the running sound effect.
+
+audioSourceRun.clip = runSound;: This line sets the audio clip that the audioSourceRun will play when triggered. runSound is presumably a sound file that contains the running sound effect.
+
+audioSourceRun.spatialBlend = 1.0f;: Similar to the audioSourceWalk, this line sets the spatial blend of the audioSourceRun to 1.0f, indicating that the audio should be played in 3D space.
 
 <h3>Void Update in Character Controller</h3>
 
