@@ -171,3 +171,31 @@ void PropelPlayerDown(): This function applies a downward force to the player's 
 void PropelPlayerForward(): This function handles teleporting the player forward. It calculates the new position (teleportPosition) by adding the player's current position with a vector representing the forward direction (transform.TransformDirection(Vector3.forward)) multiplied by teleportDistance. Then, it temporarily disables the character controller, sets the player's position to the calculated teleportation position, and finally enables the character controller again. This effectively moves the player to a new position in the game world without any intermediate movement.
 
 <h3>Simon Color Game</h3>
+
+<kbd><img src="https://i.imgur.com/tSatkQs.png" alt="Level 8"></kbd>
+
+defaultMaterial = GetComponent<Renderer>().material;: This line gets the default material of the object to which this script is attached and assigns it to the defaultMaterial variable. This material is used to reset the object's appearance after flashing the color sequence.
+
+colorSequence = new List<Material>();: This line initializes a new list called colorSequence to hold the materials representing the color sequence.
+
+GenerateRandomSequence();: This function call generates the initial random color sequence.
+
+StartCoroutine(FlashSequence());: This line starts a coroutine named FlashSequence(), which will flash the color sequence over time.
+
+colorSequence.Clear();: This line clears any existing color sequence from the colorSequence list.
+
+for (int i = 0; i < sequenceLength; i++): This loop iterates sequenceLength times to generate a new random color sequence.
+
+Material randomColor = GetRandomColor();: This line calls the GetRandomColor() function to get a random color material.
+
+colorSequence.Add(randomColor);: This line adds the random color material to the colorSequence list.
+
+Material[] colors = { redMaterial, blueMaterial, greenMaterial, yellowMaterial };: This line creates an array containing the different color materials available.
+
+return colors[Random.Range(0, colors.Length)];: This line returns a random color material from the colors array using Random.Range() to generate a random index.
+
+<kbd><img src="https://i.imgur.com/VmtIAGv.png" alt="Level 8"></kbd>
+
+
+
+<kbd><img src="https://i.imgur.com/WoQWuzB.png" alt="Level 8"></kbd>
