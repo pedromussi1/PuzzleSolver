@@ -222,6 +222,8 @@ if (playerProgress == sequenceLength): This condition checks if the player has c
 If the player has completed the sequence, the coroutine: Resets the player's progress (playerProgress) and the current color index (currentColorIndex). Increases the sequence length (sequenceLength) and the sets completed (setsCompleted) counters.
 
 Checks if three sets have been completed (setsCompleted >= 3): If so, it activates a level completion object (LevelComp) and invokes the LoadNextLevel() function after a delay. The LoadNextLevel() function loads the next level in the game.
+
+<kbd><img src="https://i.imgur.com/WoQWuzB.png" alt="Level 8"></kbd>
     
 <h4>ShowColor</h4>
 
@@ -231,4 +233,20 @@ It takes a Material parameter colorMaterial, representing the material to be sho
 
 Inside the method, it sets the object's renderer material to colorMaterial, effectively changing the appearance of the object to the specified color.
 
-<kbd><img src="https://i.imgur.com/WoQWuzB.png" alt="Level 8"></kbd>
+<h4>public Material GetNextColor()</h4>
+
+This method returns the next color material in the color sequence.
+
+It checks if currentColorIndex is within the bounds of the colorSequence list.
+
+If it is, it returns the color material at index currentColorIndex in the colorSequence list and increments currentColorIndex for the next call.
+
+If currentColorIndex is out of bounds (indicating that the sequence is complete), it returns null to signal that the sequence is complete.
+
+<h4>public Material PeekNextColor()</h4>
+
+This method is similar to GetNextColor() but doesn't advance currentColorIndex.
+
+It returns the next color material in the sequence without incrementing currentColorIndex.
+
+This is useful for peeking at the next color without actually progressing through the sequence.
