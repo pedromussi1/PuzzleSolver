@@ -146,6 +146,12 @@ transform.rotation *= Quaternion.Euler(0, Input.GetAxis("Mouse X") * lookSpeed, 
 
 <kbd><img src="https://i.imgur.com/tjLfbMO.png" alt="Level 8"></kbd>
 
+if (Input.GetKey(KeyCode.LeftControl) && canMove && !isCrouching): This block checks if the left control key is being held down, the player is allowed to move (canMove), and the player is not already crouching. If all conditions are met, the character controller's height and center are reduced by half (originalHeight / 2f and originalCenter / 2f, respectively), effectively making the player character crouch. The isCrouching flag is set to true to indicate that the player is crouching.
+
+else if (!Input.GetKey(KeyCode.LeftControl) && isCrouching): This block checks if the left control key is released and the player is currently crouching (isCrouching is true). If both conditions are true, the character controller's height and center are reset to their original values (originalHeight and originalCenter, respectively), bringing the player character back to a standing position. The isCrouching flag is set to false to indicate that the player is no longer crouching.
+
+
+curSpeedX = canMove ? (isRunning ? walkSpeed : (isCrouching ? crouchSpeed : walkSpeed)) * Input.GetAxis("Vertical") : 0; and curSpeedY = canMove ? (isRunning ? walkSpeed : (isCrouching ? crouchSpeed : walkSpeed)) * Input.GetAxis("Horizontal") : 0;: These lines adjust the player's movement speed (curSpeedX and curSpeedY) based on whether the player is crouching or not. If the player is crouching (isCrouching is true), the movement speed is set to crouchSpeed. Otherwise, it defaults to walkSpeed. The movement speed is also adjusted if the player is running (isRunning is true).
 
 
 <kbd><img src="https://i.imgur.com/Yqlo610.png" alt="Level 8"></kbd>
