@@ -102,4 +102,17 @@
 
 <p>This level is a maze. The player must go inside the maze and collect the rings hidden inside the rooms. They must track their progress and fidn their way to all the rings to complete the level.</p>
 
+<h2>Code Breakdown</h2>
+
+<h3>Void Start in Character Controller</h3>
+
+<kbd><img src="https://i.imgur.com/pIiI2kF.png" alt="Level 8"></kbd>
+
+<h3>Void Update in Character Controller</h3>
+
+<kbd><img src="https://i.imgur.com/uGgnnKW.png" alt="Level 8"></kbd>
+
+<kbd><img src="https://i.imgur.com/ZTdQagP.png" alt="Level 8"></kbd>
+
+<kbd><img src="https://i.imgur.com/tjLfbMO.png" alt="Level 8"></kbd>
 
