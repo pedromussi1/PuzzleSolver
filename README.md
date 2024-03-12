@@ -10,6 +10,8 @@
 
 <a href="https://play.unity.com/mg/other/firstperson-3" target="_blank">Play the Game Here!</a>
 
+### [Play the Game Here!](https://play.unity.com/mg/other/firstperson-3)
+
 
 <h2>Description</h2>
 
