@@ -134,11 +134,19 @@ if (Input.GetButton("Jump") && canMove && characterController.isGrounded): This 
 
 if (!characterController.isGrounded): This block applies gravity when the character controller is not grounded. It decreases the y-component of the movement direction over time, simulating the effect of gravity.
 
-
-
 <kbd><img src="https://i.imgur.com/ZTdQagP.png" alt="Level 8"></kbd>
 
+characterController.Move(moveDirection * Time.deltaTime);: This line moves the character controller in the direction specified by moveDirection. The movement is multiplied by Time.deltaTime to ensure smooth and frame rate-independent movement.
+
+if (canMove){rotationX += -Input.GetAxis("Mouse Y") * lookSpeed; rotationX = Mathf.Clamp(rotationX, -lookXLimit, lookXLimit);} : This conditional check ensures that rotation only occurs when the player is allowed to move (canMove). The movement inside the condotional handles vertical rotation of the player's camera based on mouse input. The variable rotationX stores the current vertical rotation. The value of Input.GetAxis("Mouse Y") represents the vertical movement of the mouse. This value is multiplied by lookSpeed to control the sensitivity of the rotation. The result is then added to rotationX. Mathf.Clamp is used to restrict the vertical rotation within a specified range (-lookXLimit to lookXLimit). This prevents the player from looking too far up or down.
+
+playerCamera.transform.localRotation = Quaternion.Euler(rotationX, 0, 0);: This line sets the local rotation of the player's camera based on the calculated rotationX. It rotates the camera vertically (up-down) relative to its local coordinate system.
+
+transform.rotation *= Quaternion.Euler(0, Input.GetAxis("Mouse X") * lookSpeed, 0);: This line handles horizontal rotation of the player based on mouse input. It modifies the rotation of the player's transform (transform.rotation) by applying a rotation around the y-axis. This rotates the player left or right based on horizontal mouse movement. The rotation is relative to the world coordinate system.
+
 <kbd><img src="https://i.imgur.com/tjLfbMO.png" alt="Level 8"></kbd>
+
+
 
 <kbd><img src="https://i.imgur.com/Yqlo610.png" alt="Level 8"></kbd>
 
