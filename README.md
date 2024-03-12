@@ -7,7 +7,9 @@
   <a href="https://www.youtube.com/watch?v=wtw1QMQUFRQ"><img src="https://img.youtube.com/vi/wtw1QMQUFRQ/0.jpg" alt="YouTube Demonstration"></a>
 </p>
 
-### [Play the Game Here!](https://play.unity.com/mg/other/firstperson-3){:target="_blank"}
+
+### <a href="https://play.unity.com/mg/other/firstperson-3" target="_blank">Play the Game Here!</a>
+
 
 <h2>Description</h2>
 
