@@ -162,3 +162,12 @@ if (isOnTrampoline){moveDirection.y = trampolineForce;}: This block checks if th
 <kbd><img src="https://i.imgur.com/4ENpp9F.png" alt="Level 8"></kbd>
 
 if (transform.position.y < -20f) {SceneManager.LoadScene(currentLevel);}: This block checks if the player's current y-coordinate position is below -20 units. This condition is used to determine if the player has fallen off the map. If the player's y-coordinate position is indeed below -20 units, it reloads the current scene using SceneManager.LoadScene(). It loads the scene specified by the currentLevel variable.
+
+<kbd><img src="https://i.imgur.com/G9LlY4B.png" alt="Level 8"></kbd>
+
+void PropelPlayerUp(): This function applies an upward force to the player's movement. It sets the moveDirection.y component to the value of shootUpForce, causing the player to move upwards.
+
+void PropelPlayerDown(): This function applies a downward force to the player's movement. It sets the moveDirection.y component to the negative value of shootDownForce, causing the player to move downwards.
+
+void PropelPlayerForward(): This function handles teleporting the player forward. It calculates the new position (teleportPosition) by adding the player's current position with a vector representing the forward direction (transform.TransformDirection(Vector3.forward)) multiplied by teleportDistance. Then, it temporarily disables the character controller, sets the player's position to the calculated teleportation position, and finally enables the character controller again. This effectively moves the player to a new position in the game world without any intermediate movement.
+
