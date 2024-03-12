@@ -156,12 +156,11 @@ curSpeedX = canMove ? (isRunning ? walkSpeed : (isCrouching ? crouchSpeed : walk
 
 <kbd><img src="https://i.imgur.com/Yqlo610.png" alt="Level 8"></kbd>
 
-if (isOnTrampoline){moveDirection.y = trampolineForce;}: This block checks if the player character is currently on a trampoline (isOnTrampoline is true). If the player is indeed on the trampoline, it applies an upward force to the player's movement in the y-direction. This is achieved by setting the moveDirection.y component to trampolineForce.TrampolineForce is assigned to 20 in the code previously.
-
+if (isOnTrampoline): This block checks if the player character is currently on a trampoline (isOnTrampoline is true). If the player is indeed on the trampoline, it applies an upward force to the player's movement in the y-direction. This is achieved by setting the moveDirection.y component to trampolineForce.TrampolineForce is assigned to 20 in the code previously.
 
 <kbd><img src="https://i.imgur.com/4ENpp9F.png" alt="Level 8"></kbd>
 
-if (transform.position.y < -20f) {SceneManager.LoadScene(currentLevel);}: This block checks if the player's current y-coordinate position is below -20 units. This condition is used to determine if the player has fallen off the map. If the player's y-coordinate position is indeed below -20 units, it reloads the current scene using SceneManager.LoadScene(). It loads the scene specified by the currentLevel variable.
+if (transform.position.y < -20f): This block checks if the player's current y-coordinate position is below -20 units. This condition is used to determine if the player has fallen off the map. If the player's y-coordinate position is indeed below -20 units, it reloads the current scene using SceneManager.LoadScene(). It loads the scene specified by the currentLevel variable.
 
 <kbd><img src="https://i.imgur.com/G9LlY4B.png" alt="Level 8"></kbd>
 
