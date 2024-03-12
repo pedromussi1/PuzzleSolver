@@ -157,6 +157,29 @@ Each Color object is created using the new Color(float r, float g, float b) cons
 
 <kbd><img src="https://i.imgur.com/roORhUH.png" alt="Level 8"></kbd>
 
+private static int colorIndex = 0;: This line declares a private static integer variable colorIndex and initializes it to 0. It's used to cycle through the predetermined colors array, presumably to assign a color to each cube.
+
+
+void Start(): This method is called when the script instance is being loaded. 
+
+originalColor = GetNextColor();: It sets the originalColor variable to the next color from the predetermined colors array using the GetNextColor() method.
+
+void OnMouseDown(): This method is called when the user clicks on the object this script is attached to.
+
+if (!isFlipped && (firstCube == null || secondCube == null)): This condition checks if the cube hasn't been flipped yet and if either the first or second cube is null (indicating that one of them hasn't been selected yet). If the conditions are met, it calls FlipCube() to flip the cube, then checks for a match and plays a flip sound.
+
+void FlipCube(): This method is called to flip the cube.
+
+GetComponent<Renderer>().material.color = originalColor;: It sets the cube's color to the originalColor obtained from GetNextColor().
+
+isFlipped = true;: It sets the isFlipped flag to true, indicating that the cube has been flipped. It also assigns the current cube to firstCube if firstCube is null, or to secondCube otherwise.
+
+void RevertCube(): This method is called to revert the cube's color to white, presumably when the cubes don't match.
+
+GetComponent<Renderer>().material.color = Color.white;: It sets the cube's color to white.
+
+isFlipped = false;: It sets the isFlipped flag back to false.
+
 <kbd><img src="https://i.imgur.com/EI3L0Y8.png" alt="Level 8"></kbd>
 
 <kbd><img src="https://i.imgur.com/93aAfYG.png" alt="Level 8"></kbd>
