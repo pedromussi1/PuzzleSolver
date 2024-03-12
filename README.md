@@ -104,7 +104,7 @@
 
 <h2>Code Breakdown</h2>
 
-<h3>Void Start in Character Controller</h3>
+<h3>FPSController</h3>
 
 <kbd><img src="https://i.imgur.com/H43B18B.png" alt="Level 8"></kbd>
 
@@ -116,21 +116,25 @@ Cursor.visible = false;: This line makes the cursor invisible while it's locked.
 
 originalHeight = characterController.height; and originalCenter = characterController.center;: These lines save the original height and center position of the character controller. This is useful when the character controller's height or center position is modified during gameplay and needs to be reset later.
 
-audioSourceWalk = gameObject.AddComponent<AudioSource>();: This line adds an AudioSource component and assigns it to the audioSourceWalk variable.
-
-audioSourceWalk.clip = walkSound;: This line sets the audio clip that the audioSourceWalk will play when triggered.
-
-audioSourceWalk.spatialBlend = 1.0f;: This line sets the spatial blend of the audioSourceWalk to 1.0f, indicating that the audio should be played in 3D space. This means that the sound will be perceived as coming from a specific point in the game world, which is typically the position of the GameObject to which the AudioSource is attached.
-
-audioSourceRun = gameObject.AddComponent<AudioSource>();: This line adds another AudioSource component to the same GameObject and assigns it to the audioSourceRun variable. This will be used for playing the running sound effect.
-
-audioSourceRun.clip = runSound;: This line sets the audio clip that the audioSourceRun will play when triggered. runSound is presumably a sound file that contains the running sound effect.
-
-audioSourceRun.spatialBlend = 1.0f;: Similar to the audioSourceWalk, this line sets the spatial blend of the audioSourceRun to 1.0f, indicating that the audio should be played in 3D space.
-
-<h3>Void Update in Character Controller</h3>
-
 <kbd><img src="https://i.imgur.com/uGgnnKW.png" alt="Level 8"></kbd>
+
+if (!PauseMenu.GameIsPaused): This line checks whether the game is currently paused using the GameIsPaused boolean variable from the PauseMenu class. If the game is not paused, the code inside the block will be executed.
+
+Vector3 forward = transform.TransformDirection(Vector3.forward); and Vector3 right = transform.TransformDirection(Vector3.right);: These lines calculate the forward and right directions relative to the player's orientation. TransformDirection is used to transform the given direction from local space to world space.
+
+bool isRunning = Input.GetKey(KeyCode.LeftShift);: This line checks if the left shift key is being held down to determine whether the player is running.
+
+float curSpeedX = canMove ? (isRunning ? runSpeed : walkSpeed) * Input.GetAxis("Vertical") : 0; and float curSpeedY = canMove ? (isRunning ? runSpeed : walkSpeed) * Input.GetAxis("Horizontal") : 0;: These lines calculate the current movement speed along the x and y axes based on whether the player can move (canMove), whether they are running (isRunning), and the input received from the vertical and horizontal axes.
+
+float movementDirectionY = moveDirection.y;: This line stores the current y-component of the movement direction to be used for jumping.
+
+moveDirection = (forward * curSpeedX) + (right * curSpeedY);: This line combines the forward and right movement vectors to determine the overall movement direction.
+
+if (Input.GetButton("Jump") && canMove && characterController.isGrounded): This block handles jumping. If the jump button (presumably the spacebar) is pressed, the player can move (canMove) and is grounded, the moveDirection.y component is set to the jump power. Otherwise, the y-component of the movement direction remains the same as before.
+
+if (!characterController.isGrounded): This block applies gravity when the character controller is not grounded. It decreases the y-component of the movement direction over time, simulating the effect of gravity.
+
+
 
 <kbd><img src="https://i.imgur.com/ZTdQagP.png" alt="Level 8"></kbd>
 
