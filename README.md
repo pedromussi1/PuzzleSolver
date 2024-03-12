@@ -219,12 +219,9 @@ yield return new WaitForSeconds(sequencePause);: After the entire color sequence
 <h4>Checking Player Progress</h4>
 
 if (playerProgress == sequenceLength): This condition checks if the player has completed the entire sequence.
-If the player has completed the sequence, the coroutine:
-  Resets the player's progress (playerProgress) and the current color index (currentColorIndex).
-  Increases the sequence length (sequenceLength) and the sets completed (setsCompleted) counters.
-  Checks if three sets have been completed (setsCompleted >= 3):
-    If so, it activates a level completion object (LevelComp) and invokes the LoadNextLevel() function after a delay.
-    The LoadNextLevel() function loads the next level in the game.
+If the player has completed the sequence, the coroutine: Resets the player's progress (playerProgress) and the current color index (currentColorIndex). Increases the sequence length (sequenceLength) and the sets completed (setsCompleted) counters.
+
+Checks if three sets have been completed (setsCompleted >= 3): If so, it activates a level completion object (LevelComp) and invokes the LoadNextLevel() function after a delay. The LoadNextLevel() function loads the next level in the game.
     
 
 <kbd><img src="https://i.imgur.com/WoQWuzB.png" alt="Level 8"></kbd>
