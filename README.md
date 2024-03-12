@@ -156,4 +156,7 @@ curSpeedX = canMove ? (isRunning ? walkSpeed : (isCrouching ? crouchSpeed : walk
 
 <kbd><img src="https://i.imgur.com/Yqlo610.png" alt="Level 8"></kbd>
 
+if (isOnTrampoline){moveDirection.y = trampolineForce;}: This block checks if the player character is currently on a trampoline (isOnTrampoline is true). If the player is indeed on the trampoline, it applies an upward force to the player's movement in the y-direction. This is achieved by setting the moveDirection.y component to trampolineForce.TrampolineForce is assigned to 20 in the code previously.
+
+
 <kbd><img src="https://i.imgur.com/4ENpp9F.png" alt="Level 8"></kbd>
