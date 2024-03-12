@@ -1,6 +1,6 @@
 <h2>Code Breakdown</h2>
 
-<h3>FPSController</h3>
+### <h3>FPSController</h3>
 
 <kbd><img src="https://i.imgur.com/H43B18B.png" alt="Level 8"></kbd>
 
@@ -66,7 +66,7 @@ void PropelPlayerDown(): This function applies a downward force to the player's 
 
 void PropelPlayerForward(): This function handles teleporting the player forward. It calculates the new position (teleportPosition) by adding the player's current position with a vector representing the forward direction (transform.TransformDirection(Vector3.forward)) multiplied by teleportDistance. Then, it temporarily disables the character controller, sets the player's position to the calculated teleportation position, and finally enables the character controller again. This effectively moves the player to a new position in the game world without any intermediate movement.
 
-<h3>Simon Color Game</h3>
+### <h3>Simon Color Game</h3>
 
 <kbd><img src="https://i.imgur.com/tSatkQs.png" alt="Level 8"></kbd>
 
@@ -146,3 +146,18 @@ This method is similar to GetNextColor() but doesn't advance currentColorIndex.
 It returns the next color material in the sequence without incrementing currentColorIndex.
 
 This is useful for peeking at the next color without actually progressing through the sequence.
+
+### <h3>Memory Card Game</h3>
+
+<kbd><img src="https://i.imgur.com/fQ8rkq6.png" alt="Level 8"></kbd>
+
+private static Color[] predeterminedColors: This line declares a private static array named predeterminedColors of type Color[]. The static keyword means that this array is shared among all instances of the class it belongs to. It also initializes the array with a set of Color objects enclosed in curly braces {}.
+
+Each Color object is created using the new Color(float r, float g, float b) constructor, where r, g, and b represent the red, green, and blue components of the color, respectively, each ranging from 0 to 1.
+
+<kbd><img src="https://i.imgur.com/roORhUH.png" alt="Level 8"></kbd>
+
+<kbd><img src="https://i.imgur.com/EI3L0Y8.png" alt="Level 8"></kbd>
+
+<kbd><img src="https://i.imgur.com/93aAfYG.png" alt="Level 8"></kbd>
+
