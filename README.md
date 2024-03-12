@@ -223,5 +223,12 @@ If the player has completed the sequence, the coroutine: Resets the player's pro
 
 Checks if three sets have been completed (setsCompleted >= 3): If so, it activates a level completion object (LevelComp) and invokes the LoadNextLevel() function after a delay. The LoadNextLevel() function loads the next level in the game.
     
+<h4>ShowColor</h4>
+
+This method is responsible for displaying a color on the object.
+
+It takes a Material parameter colorMaterial, representing the material to be shown.
+
+Inside the method, it sets the object's renderer material to colorMaterial, effectively changing the appearance of the object to the specified color.
 
 <kbd><img src="https://i.imgur.com/WoQWuzB.png" alt="Level 8"></kbd>
