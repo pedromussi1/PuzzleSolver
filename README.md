@@ -29,9 +29,9 @@
   <li><b>Windows 11</b></li>
 </ul>
 
-<h1>
+<h2>
 <a href="https://github.com/pedromussi1/PuzzleSolver/blob/main/READCODE.md">Code Breakdown Here!</a>
-</h1>
+</h2>
 
 
 <h2>Game Walk-through</h2>
