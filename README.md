@@ -194,12 +194,37 @@ Material randomColor = GetRandomColor();: This line calls the GetRandomColor() f
 
 colorSequence.Add(randomColor);: This line adds the random color material to the colorSequence list.
 
+<h4>GetRandomColor()</h4>
+
 Material[] colors = { redMaterial, blueMaterial, greenMaterial, yellowMaterial };: This line creates an array containing the different color materials available.
 
 return colors[Random.Range(0, colors.Length)];: This line returns a random color material from the colors array using Random.Range() to generate a random index.
 
 <kbd><img src="https://i.imgur.com/VmtIAGv.png" alt="Level 8"></kbd>
 
+<h4>Color Flashing Loop and Logic</h4>
 
+foreach (Material colorMaterial in colorSequence): This loop iterates through each material in the colorSequence list.
+
+ShowColor(colorMaterial);: This function call sets the object's material to the current color material from the sequence, effectively displaying that color.
+
+yield return new WaitForSeconds(flashDelay);: This pauses the coroutine for flashDelay seconds before proceeding to the next step.
+
+ShowColor(defaultMaterial);: This sets the object's material back to the default material (or white) after displaying the color for a brief period.
+
+yield return new WaitForSeconds(0.5f);: This adds a short delay between flashes to enhance the visual effect.
+
+yield return new WaitForSeconds(sequencePause);: After the entire color sequence has been flashed, this line adds a longer pause before starting the next sequence.
+
+<h4>Checking Player Progress</h4>
+
+if (playerProgress == sequenceLength): This condition checks if the player has completed the entire sequence.
+If the player has completed the sequence, the coroutine:
+  Resets the player's progress (playerProgress) and the current color index (currentColorIndex).
+  Increases the sequence length (sequenceLength) and the sets completed (setsCompleted) counters.
+  Checks if three sets have been completed (setsCompleted >= 3):
+    If so, it activates a level completion object (LevelComp) and invokes the LoadNextLevel() function after a delay.
+    The LoadNextLevel() function loads the next level in the game.
+    
 
 <kbd><img src="https://i.imgur.com/WoQWuzB.png" alt="Level 8"></kbd>
