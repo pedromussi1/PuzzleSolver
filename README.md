@@ -174,6 +174,8 @@ void PropelPlayerForward(): This function handles teleporting the player forward
 
 <kbd><img src="https://i.imgur.com/tSatkQs.png" alt="Level 8"></kbd>
 
+<h4>Start()</h4>
+
 defaultMaterial = GetComponent<Renderer>().material;: This line gets the default material of the object to which this script is attached and assigns it to the defaultMaterial variable. This material is used to reset the object's appearance after flashing the color sequence.
 
 colorSequence = new List<Material>();: This line initializes a new list called colorSequence to hold the materials representing the color sequence.
@@ -181,6 +183,8 @@ colorSequence = new List<Material>();: This line initializes a new list called c
 GenerateRandomSequence();: This function call generates the initial random color sequence.
 
 StartCoroutine(FlashSequence());: This line starts a coroutine named FlashSequence(), which will flash the color sequence over time.
+
+<h4>GenerateRandomSequence()</h4>
 
 colorSequence.Clear();: This line clears any existing color sequence from the colorSequence list.
 
