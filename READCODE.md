@@ -193,7 +193,17 @@ It checks if all pairs have been matched (matchedPairs == 10). If so: It plays a
 
 else: If the colors don't match: It invokes the RevertCubesWithDelay() method after a delay of 2 seconds. This method presumably reverts the cubes' colors back to their original state.
 
-<kbd><img src="https://i.imgur.com/93aAfYG.png" alt="Level 8"></kbd>
+<kbd><img src="https://i.imgur.com/sUZf5IU.png" alt="Level 8"></kbd>
 
+void RevertCubesWithDelay(): This method is responsible for reverting the colors of the two flipped cubes back to their original state with a delay.
 
+firstCube.RevertCube(); and secondCube.RevertCube();: These lines call the RevertCube() method for both firstCube and secondCube, reverting their colors to white.
+
+firstCube = null; and secondCube = null;: These lines reset firstCube and secondCube to null, indicating that no cubes are currently selected.
+
+Color GetNextColor(): This method is responsible for obtaining the next color from the predetermined array of colors.
+
+Color nextColor = predeterminedColors[colorIndex];: This line retrieves the color at the index specified by colorIndex from the predeterminedColors array and assigns it to nextColor.
+
+colorIndex = (colorIndex + 1) % predeterminedColors.Length;: This line increments colorIndex by 1 and ensures that it wraps around to 0 when it reaches the length of the predeterminedColors array, thus cycling through the colors in the array.Finally, it returns nextColor, which represents the next color in the predetermined sequence.
 
