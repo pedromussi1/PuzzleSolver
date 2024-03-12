@@ -116,3 +116,6 @@
 
 <kbd><img src="https://i.imgur.com/tjLfbMO.png" alt="Level 8"></kbd>
 
+<kbd><img src="https://i.imgur.com/Yqlo610.png" alt="Level 8"></kbd>
+
+<kbd><img src="https://i.imgur.com/4ENpp9F.png" alt="Level 8"></kbd>
